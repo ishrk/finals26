@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlantic Bites - Culture &amp; Story</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="intexmain.html" class="logo">Atlantic Bites</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="foodguide.html">Food Guide</a></li>
+        <li><a href="culture.html" class="selected">Culture &amp; Story</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="culture-story">
+      <h1>The Story Behind the City</h1>
+      <div class="story-grid">
+        <img
+          src="images/culture.jpg"
+          srcset="images/culture.jpg 1x, images/culture2x.jpg 2x"
+          width="800"
+          height="500"
+          alt="A neighborhood street in Atlantic City">
+        <div class="story-text">
+          <p>Atlantic City has always been two cities at once. There is the city the world sees: the neon, the casinos, the boardwalk and then there is the city that residents actually live in. The real Atlantic City is a majority-Black city with a rich cultural history, a tight-knit community, and a food scene that has nothing to do with the resort industry built around it.</p>
+          <p>For decades, the promise of casino revenue was supposed to lift the whole city. It didn't. But the community persisted, and so did its restaurants, its traditions, and its identity. The food here tells that story better than any policy paper could. Every family-owned spot that has survived is an act of resilience. Atlantic Bites exists to make sure those places get the recognition they deserve.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-voice">
+      <h2>Community Voice</h2>
+      <blockquote>
+        <p>"People always ask me why I never left Atlantic City. I tell them this city made me. The food, the people, the culture. You can't find this anywhere else on the Shore. We're still here, and we're not going anywhere."</p>
+        <cite>- Long-time Atlantic City resident</cite>
+      </blockquote>
+    </section>
+
+    <section class="suggest">
+      <h2>Suggest a Food or Spot</h2>
+      <p>Know a restaurant, dish, or local food tradition we should feature? Tell us about it.</p>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Maria Santos" required>
+        </div>
+
+        <div class="form-group">
+          <label for="spot">Restaurant or Dish Name</label>
+          <input type="text" id="spot" name="spot" placeholder="e.g. Dock's Oyster House" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">Select a category</option>
+            <option value="seafood">Seafood</option>
+            <option value="soul-food">Soul Food</option>
+            <option value="international">International</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Why should we feature it?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what makes it special..." required></textarea>
+        </div>
+
+        <button type="submit">Submit Suggestion</button>
+
+      </form>
+
+      <p class="form-confirmation" style="display: none; color: #1a3a5c; font-weight: 600; margin-top: 1rem;"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Atlantic Bites | Atlantic City, NJ</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
